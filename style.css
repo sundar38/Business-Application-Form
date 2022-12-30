@@ -1,0 +1,190 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0px;
+    right: 0px;
+}
+
+.navbar .left {
+    color: white;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+}
+
+.navbar .right ul {
+    display: flex;
+}
+
+.navbar .right ul a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+}
+.entire{
+    background-color: black;
+}
+.homesection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.entire i{
+    text-align: center;
+    color: white;
+    display: block;
+    padding: 30px;
+}
+
+.homesection .leftsection {
+    font-family: 'Inter';
+    color: white;
+    font-style: normal;
+    /* font-weight: 700; */
+    font-size: 100px;
+    padding: 39px 100px;
+    margin-top: 65px;
+    /* height: 22px; */
+    margin-bottom: 170px;
+    animation-name: fadingheading;
+    animation-duration: 2s;
+}
+@keyframes fadingheading{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.homesection .rightsection img {
+    padding: 20px;
+    margin-top: 165px;
+}
+
+.aboutus {
+    display: flex;
+    margin: 75px 50px
+}
+@media screen and (max-width:768px) {
+    .aboutus{
+    flex-direction: column;
+    }
+}
+
+.rightaboutus .text {
+    padding: 45px 65px;
+}
+
+.rightaboutus h1 {
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 100px;
+}
+
+.rightaboutus .text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+}
+
+.leftaboutus img {
+    height: 520px;
+    width: 561px;
+}
+
+.services {
+    margin: 20px;
+}
+
+.services .text {
+    padding: 20px 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size:60px;
+}
+
+.services .boxsection {
+    display: flex;
+    gap: 45px;
+    height: 250px;
+    overflow-x: scroll;
+}
+
+
+.services .boxsection .box {
+    border: 1px solid black;
+    padding: 15px 25px;
+    
+}
+.services .boxsection .box:hover{
+    animation-name: boxeffects;
+    animation-duration: 0.3s;
+}
+@keyframes boxeffects {
+    from{
+        background-color: white;
+    }
+    to{
+        background-color: black;
+        color: white;
+    }
+    
+}
+
+.services .boxsection .box .boxheading {
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 40px;
+
+}
+
+.services .boxsection .box .content {
+    font-family: 'Inter';
+    font-style: normal;
+}
+.contact{
+    background-color: black;
+    padding: 30px;
+    margin-top: 85px;
+}
+.contact .heading{
+    text-align: center;
+    color: white;
+    font-family: 'Inter';
+font-style: normal;
+
+font-size: 20px;
+}
+.contact h1{
+    padding: 20px;
+}
+.contact .forms .inputs input{
+    width: 1500px;
+    height: 40px;
+}
+.contact .forms input{
+    width: 300px;
+    height: 30px;
+}
