@@ -4,13 +4,10 @@ function submitForm(){
     let lastname=document.getElementById('lnames').value;
     console.log(lastname);
     let pmail= document.getElementById('emailtype').value;
-    console.log(pmail);
-   
+    console.log(pmail);  
     
-    if(firstname!=null && lastname!=null && pmail!=null){
-        alert("success");
+    if(firstname!="" && lastname!="" && pmail!=""){
+        alert("Form submitted successfully");
     }
-    else{
-        alert("fill again")
-    }
+    
 }

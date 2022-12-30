@@ -1,6 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 .navbar {
@@ -39,11 +40,15 @@
 }
 .entire{
     background-color: black;
+    left: 0;
+    right: 0px;
+    width: 100%;
 }
-.homesection {
+.entire .homesection {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
 .entire i{
     text-align: center;
@@ -52,7 +57,7 @@
     padding: 30px;
 }
 
-.homesection .leftsection {
+.entire .homesection .leftsection {
     font-family: 'Inter';
     color: white;
     font-style: normal;
@@ -73,10 +78,16 @@
         opacity: 1;
     }
 }
+@media screen and (max-width:768px){
+    .entire .homesection{
+        flex-direction: column;
+    }
+}
 
 .homesection .rightsection img {
     padding: 20px;
     margin-top: 165px;
+    background-color: black;
 }
 
 .aboutus {
@@ -127,9 +138,14 @@
 
 .services .boxsection {
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 1700px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 2rem;
+    overflow-x: auto;
     gap: 45px;
-    height: 250px;
-    overflow-x: scroll;
 }
 
 
@@ -168,6 +184,8 @@
     background-color: black;
     padding: 30px;
     margin-top: 85px;
+    left: 0px;
+    right: 0px;
 }
 .contact .heading{
     text-align: center;
