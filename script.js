@@ -9,5 +9,8 @@ function submitForm(){
     if(firstname!="" && lastname!="" && pmail!=""){
         alert("Form submitted successfully");
     }
+    else{
+        alert("Please fill all the fields")
+    }
     
 }
