@@ -33,6 +33,7 @@
     width: 30px;
     padding: 15px;
     text-align: center;
+    /* display: none; */
 }
 .navbar .right #click{
     display: none;
@@ -45,6 +46,9 @@
     color: white;
     padding: 10px 5px;
 } */
+/* .navbar .right i{
+    display: none;
+} */
 
 .navbar .right ul a {
     color: white;
@@ -54,6 +58,10 @@
     font-style: normal;
     font-weight: 300;
     font-size: 24px;
+}
+.navbar .right ul a:hover {
+    color: blue;
+    text-decoration-line: underline;
 }
 
 /* #clicking{
@@ -86,15 +94,15 @@
     }
 
     .navbar i {
-
         color: white;
         width: 53px;
         /* height: 70px; */
-        display: block;
+        display: inline;
         /* padding: 0px 6px; */
         right: 0;
         position: fixed;
         right: 92px;
+
     }
 }
 
@@ -211,8 +219,19 @@
     justify-content: flex-start;
     align-items: flex-start;
     padding-top: 2rem;
-    overflow-x: scroll;
+    overflow-x: auto;
+    /* overflow-x: scroll; */
     gap: 45px;
+}
+.services .contacticons{
+    float: right;
+    padding: 10px;
+    position: relative;
+    top: 10px;
+    right: 20px;
+}
+.services .contacticons i{
+    padding: 10px;
 }
 
 @media screen and (max-width:768px) {
@@ -225,6 +244,7 @@
 .services .boxsection .box {
     border: 1px solid black;
     padding: 15px 25px;
+    background-color: pink;
 
 }
 
