@@ -1,0 +1,12 @@
+.msg{
+    position: absolute;
+    top: 30vh;
+    left: 30vw;
+}
+.text{
+    position: relative;
+    right: 140px;
+}
+.image{
+    height: 330px;
+}

@@ -12,25 +12,34 @@ function submitForm() {
         email: pmail,
     }
 
-    // localStorage.removeItem("details")
+    //  localStorage.removeItem("details")
     // console.log(JSON.parse(localStorage.getItem("details")));
     
     let arr = JSON.parse(localStorage.getItem("details"));
-    // console.log(searchhistory, typeof(searchhistory));
+    
    
     console.log(arr);
 
     if(arr){
-        arr.push(userdetails)
+        //arr.push(userdetails)
         //console.log("in if");
         console.log(arr);
+        var x=0;
         if (firstname != "" && lastname != "" && pmail != "") {     
             for (let i = 0; i < arr.length; i++) {
                 if (pmail == arr[i].email) {
-                    alert("Email already exists");
+                    x=1;
+                    
                 }          
             }
-            arr.push(userdetails);        
+            if(x==1){
+                alert("Email already exists");
+            }
+            else{
+                console.log("hi");
+            arr.push(userdetails); 
+            window.location.href="/success.html";    
+            }  
         }
         else{
             alert("Please fill all the fields")
@@ -39,18 +48,10 @@ function submitForm() {
     else{
         arr=[userdetails]
         //console.log("in else");
-        //console.log(searchhistory);        
+        //console.log(searchhistory);  
+        console.log(arr);      
     }
-    localStorage.setItem("details", JSON.stringify(arr));
-    
-
-
-
-
-
-
-
-    
+    localStorage.setItem("details", JSON.stringify(arr)); 
     
 
     
